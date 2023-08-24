@@ -21,8 +21,6 @@ public class PostServiceImpl implements PostService {
     public Post create(Post post) {
         return postRepo.save(post);
     }
-
-
     @Override
     public Post get(Long id) {
         return null;

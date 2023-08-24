@@ -1,10 +1,12 @@
 package com.example.myapp.dtos;
 
 import com.example.myapp.enumeration.Gender;
+import com.example.myapp.model.Post;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -18,4 +20,5 @@ public class UserDto {
     private String password;
     private String imageUrl;
     private Gender gender;
+    private List<PostDto> posts;
 }

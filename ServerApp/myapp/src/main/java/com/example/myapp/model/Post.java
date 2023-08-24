@@ -17,6 +17,7 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long postId;
     private String text;
+    private String title;
     @ManyToOne
     @JoinColumn(name = "userId")
     private User user;

@@ -9,4 +9,6 @@ public class PostDto {
     private Long postId;
     private String text;
     private Long userId;
+    private String title;
+    private String author;
 }
