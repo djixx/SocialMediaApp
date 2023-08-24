@@ -2,6 +2,7 @@ package com.example.myapp.controller;
 
 import com.example.myapp.converter.UserConverter;
 import com.example.myapp.dtos.UserDto;
+import com.example.myapp.model.Post;
 import com.example.myapp.model.User;
 import com.example.myapp.service.UserService;
 import jakarta.validation.Valid;
@@ -31,9 +32,11 @@ public class UserController {
     }
 
     @GetMapping("/get/{id}")
-    public ResponseEntity<User> getOneUser(@PathVariable("id") Long id) {
+    public ResponseEntity<UserDto> getOneUser(@PathVariable("id") Long id) {
         User user = userService.get(id);
-        return ResponseEntity.ok(user);
+        List<Post>  userPosts = user.getPosts();
+        UserDto userDto = userConverter.convert(user);
+        return ResponseEntity.ok(userDto);
     }
 
     @PostMapping("/save")

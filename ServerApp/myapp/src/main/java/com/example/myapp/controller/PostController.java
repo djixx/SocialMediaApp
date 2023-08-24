@@ -29,6 +29,7 @@ public class PostController {
         post.setText(postDto.getText());
         User user = userService.get(postDto.getUserId());
         post.setUser(user);
+        post.setTitle(postDto.getTitle());
         post = postService.create(post);
         return ResponseEntity.ok(postConverter.convert(post));
     }
@@ -46,6 +47,15 @@ public class PostController {
         List<Post> posts = user.getPosts();
         return ResponseEntity.ok(postConverter.convertList(posts));
     }
-
+    @PostMapping("/save/{userId}")
+    public ResponseEntity<PostDto> savePostUser(@PathVariable Long userId,@RequestBody @Valid PostDto postDto) {
+        Post post = new Post();
+        post.setText(postDto.getText());
+        post.setTitle(postDto.getTitle());
+        User user = userService.get(userId);
+        post.setUser(user);
+        post = postService.create(post);
+        return ResponseEntity.ok(postConverter.convert(post));
+    }
 
 }
