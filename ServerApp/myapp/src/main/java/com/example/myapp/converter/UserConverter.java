@@ -1,6 +1,7 @@
 package com.example.myapp.converter;
 
 import com.example.myapp.dtos.UserDto;
+import com.example.myapp.enumeration.Role;
 import com.example.myapp.model.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -24,12 +25,14 @@ public class UserConverter {
         userDto.setUsername(user.getUsername());
         userDto.setLastname(user.getLastName());
         userDto.setFirstname(user.getFirstname());
+
         userDto.setEmail(user.getEmail());
         userDto.setDateOfBirth(user.getDate());
         userDto.setImageUrl(user.getImageUrl());
         userDto.setGender(user.getGender());
         userDto.setId(user.getUserId());
         userDto.setPosts(postConverter.convertList(user.getPosts()));
+        userDto.setRole(Role.USER);
         return userDto;
     }
 

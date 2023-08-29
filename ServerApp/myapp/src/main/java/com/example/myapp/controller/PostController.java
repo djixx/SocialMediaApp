@@ -2,6 +2,7 @@ package com.example.myapp.controller;
 
 import com.example.myapp.converter.PostConverter;
 import com.example.myapp.dtos.PostDto;
+import com.example.myapp.dtos.UserDto;
 import com.example.myapp.model.Post;
 import com.example.myapp.model.User;
 import com.example.myapp.service.PostService;
@@ -40,6 +41,12 @@ public class PostController {
         return ResponseEntity.ok(postConverter.convertList(posts));
     }
 
+    @PostMapping("/delete")
+    public ResponseEntity<List<PostDto>> delete(@RequestBody Long id) {
+        postService.delete(id);
+        List<Post> posts = postService.returnPost();
+        return ResponseEntity.ok(postConverter.convertList(posts));
+    }
 
     @GetMapping("/getOne/{userId}")
     public ResponseEntity<List<PostDto>> getPosts(@PathVariable Long userId) {

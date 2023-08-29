@@ -12,32 +12,30 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 @Transactional
-
 public class PostServiceImpl implements PostService {
-    private final PostRepo postRepo;
 
+    private final PostRepo postRepo;
 
     @Override
     public Post create(Post post) {
         return postRepo.save(post);
     }
+
     @Override
     public Post get(Long id) {
-        return null;
+        return postRepo.getReferenceById(id);
     }
 
     @Override
-    public Post update(Post user) {
-        return null;
-    }
-
-    @Override
-    public Boolean delete(Long id) {
-        return null;
+    public void delete(Long id) {
+        Post post = get(id);
+        postRepo.delete(post);
     }
 
     @Override
     public List<Post> returnPost() {
-        return postRepo.findAll();
+        return postRepo.findAllByOrderByPostIdDesc();
     }
 }
+
+

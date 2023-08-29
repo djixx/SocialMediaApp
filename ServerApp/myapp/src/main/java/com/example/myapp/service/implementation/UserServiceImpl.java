@@ -1,5 +1,6 @@
 package com.example.myapp.service.implementation;
 
+import com.example.myapp.enumeration.Role;
 import com.example.myapp.model.User;
 import com.example.myapp.repo.UserRepo;
 import com.example.myapp.service.UserService;
@@ -12,7 +13,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.util.Collection;
 import java.util.List;
-import java.util.Optional;
 import java.util.Random;
 
 
@@ -55,17 +55,14 @@ public class UserServiceImpl implements UserService {
         return Boolean.TRUE;
     }
 
-
-
-
     @Override
     public List<User> returnUsers() {
-        return userRepo.findAll();
+        return userRepo.findAllNonAdmin(Role.ADMIN);
     }
 
     @Override
     public List<User> returnUsersSorted() {
-        return userRepo.findAllByOrderByUserIdAsc();
+        return userRepo.findAllNonAdmin(Role.ADMIN);
     }
 
     @Override
@@ -73,11 +70,8 @@ public class UserServiceImpl implements UserService {
         userRepo.deleteAll();
     }
 
-
     private String setUserImageURL() { //provjeri putanju
         String[] imageNames = {"user1.png,user2.png,user3.png"};
         return ServletUriComponentsBuilder.fromCurrentContextPath().path("/users/image/" + imageNames[new Random().nextInt(3)]).toUriString();
     }
-
-
 }

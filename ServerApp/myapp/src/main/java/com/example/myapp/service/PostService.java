@@ -10,9 +10,7 @@ public interface PostService {
 
     Post get(Long id);
 
-    Post update(Post user);
-
-    Boolean delete(Long id);
+    void delete(Long id);
 
     List<Post> returnPost();
 

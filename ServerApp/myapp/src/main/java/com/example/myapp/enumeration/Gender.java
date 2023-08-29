@@ -5,9 +5,9 @@ import lombok.Setter;
 
 @Getter
 public enum Gender {
-    GENDER_MALE("GENDER_MALE"),
-    GENDER_FEMALE("GENDER_FEMALE"),
-    GENDER_OTHER("GENDER_OTHER");
+    male("male"),
+    female("female"),
+    other("other");
 
     private final String gender; //string that represents the status
 
