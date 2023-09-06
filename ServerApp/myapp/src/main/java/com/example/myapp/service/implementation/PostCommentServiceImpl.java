@@ -31,11 +31,10 @@ public class PostCommentServiceImpl implements PostCommentService {
     @Override
     public PostComment save(PostCommentDto postCommentDto) {
         Post post = postService.get(postCommentDto.getPostId());
-
         PostComment postComment = new PostComment();
         postComment.setPost(post);
         postComment.setText(postCommentDto.getText());
-
+        postComment.setUsername(postCommentDto.getUsername());
         return postCommentRepo.save(postComment);
     }
 }

@@ -18,13 +18,13 @@ public class PostCommentController {
     private final PostCommentConverter postCommentConverter;
 
     @GetMapping("/get/{postId}")
-    public ResponseEntity<List<PostCommentDto>> getAllForPost(@PathVariable Long postId) {
+    public ResponseEntity<List<PostCommentDto>> getCommentById(@PathVariable Long postId) {
         List<PostComment> posts = postCommentService.getByPostId(postId);
         return ResponseEntity.ok(postCommentConverter.convertList(posts));
     }
 
     @PostMapping("/save")
-    public ResponseEntity<PostCommentDto> getAllForPost(@RequestBody PostCommentDto postCommentDto) {
+    public ResponseEntity<PostCommentDto> saveComment(@RequestBody PostCommentDto postCommentDto) {
         PostComment postComment = postCommentService.save(postCommentDto);
         return ResponseEntity.ok(postCommentConverter.convert(postComment));
     }

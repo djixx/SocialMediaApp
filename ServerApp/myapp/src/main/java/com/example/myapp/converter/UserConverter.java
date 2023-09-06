@@ -25,7 +25,6 @@ public class UserConverter {
         userDto.setUsername(user.getUsername());
         userDto.setLastname(user.getLastName());
         userDto.setFirstname(user.getFirstname());
-
         userDto.setEmail(user.getEmail());
         userDto.setDateOfBirth(user.getDate());
         userDto.setImageUrl(user.getImageUrl());

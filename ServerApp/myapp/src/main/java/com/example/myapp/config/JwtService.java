@@ -27,6 +27,7 @@ public class JwtService {
         HashMap myClaims = new HashMap<>();
         myClaims.put("role", userDetails.getRole());
         myClaims.put("id",userDetails.getUserId());
+        myClaims.put("username",userDetails.getUsername());
         return generateToken(myClaims, userDetails);
     }
 
