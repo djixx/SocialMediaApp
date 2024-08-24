@@ -17,18 +17,23 @@ PREGLED PROJEKTA:
 1.	Početna strana:
    
 ![image](https://github.com/user-attachments/assets/e757b805-e3c9-4fb0-a542-7d52a1ac34c0)
+
 3.	Registracija korisnika:
 
 ![image](https://github.com/user-attachments/assets/4c3bf71c-77fe-4b19-aa86-aae01145ff7a)
+
 4.	Login korisnika:  
 
 ![image](https://github.com/user-attachments/assets/87a09a99-3858-43d0-a943-fac10647226e)
+
 5.	Admin ulogovan:
 
 ![image](https://github.com/user-attachments/assets/45522235-be51-490a-b440-c68bbe75a06f)
+
 6.	Korisnik ulogovan:
 
 ![image](https://github.com/user-attachments/assets/7a324f64-079e-4518-8877-d7aab8799f58)
+
 7.	Kreiranje posta:
 
 ![image](https://github.com/user-attachments/assets/d8356bd2-b325-455d-b575-95fbf4340a22)
@@ -42,20 +47,26 @@ PREGLED PROJEKTA:
 
 ![image](https://github.com/user-attachments/assets/7f356307-e591-4a68-84d1-997763e26362)
 ![image](https://github.com/user-attachments/assets/484ffc4c-5ff7-41b4-a0ae-0eea73d0717c)
+
 11.	Delete posta kao admin:
 
 ![image](https://github.com/user-attachments/assets/9eadf768-19b6-44c2-9d2d-0f9d8d718103)
 Organizacija Projekta i Kreiranje Fajlova u Angularu koristeći Visual Studio Code (VSC)
 
 ![image](https://github.com/user-attachments/assets/6dfcabc5-9ca4-4ad8-86fc-e4c45a6bc81e)
+
 ![image](https://github.com/user-attachments/assets/a80688a0-015d-4afe-91bf-8b9736554cd2)
+
 ![image](https://github.com/user-attachments/assets/3755601d-a886-4c0f-a6a0-b29af3101616)
+
 ![image](https://github.com/user-attachments/assets/59fd1c29-14d2-4b5c-b4bf-3ad2cfa53f50)
+
 ![image](https://github.com/user-attachments/assets/7b04ecd0-7bb8-45c9-9f5d-9d109b09e040)
 
 Organizacija Projekta i Kreiranje Paketa u Spring Bootu koristeći IntelliJ IDEA:
 
 ![image](https://github.com/user-attachments/assets/3159b4c2-d4d2-4ca7-bd9f-5e2289aced38)
+
 Organizacija Baze Podataka i Kreiranje Šema u PostgreSQL-u koristeći pgAdmin 4
 
 ![image](https://github.com/user-attachments/assets/b490592a-cbbf-42d9-956b-00355ecc12be)
