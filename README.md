@@ -65,6 +65,10 @@
 
 ![10](https://github.com/user-attachments/assets/b6b4c6ef-b8ef-495c-beb5-bad88e5b6abb)
 
+## Conclusion 
+
+
+By analyzing the functionalities enabled for these two roles, users can access different parts of the application according to their permissions. While users can view and edit their profiles, share posts, and interact with content, administrators have extended capabilities. Administrators can not only perform all the activities that users can but also have the authority to manage users and content, including creating and deleting user accounts and posts. This project provides a foundation for understanding the functioning and architecture of more complex technological solutions on a much broader level.
 
 
 
