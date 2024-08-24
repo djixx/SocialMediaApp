@@ -11,9 +11,13 @@ Security: The application ensures the security and privacy of user data, as well
 TECHNOLOGIES:
 
 Frontend: Angular is used to create an interactive user interface, allowing users to view profiles, posts, and utilize the application’s functionalities.
+
 Backend: Spring Boot is chosen for building the backend part of the application. It enables the definition of RESTful APIs for communication between the frontend and the database.
+
 Database: PostgreSQL is used to store user data, posts, and other relevant information.
+
 Security: Technologies such as JSON Web Token (JWT) and Spring Security ensure secure user authentication and authorization.
+
 Maintenance: The application is maintained using various tools for testing, bug tracking, and updating.
 
 1.	Home Page:
