@@ -1,77 +1,63 @@
 # SocialMediaApp
-OPIS TEME:
-Web aplikacija za društvene mreže je platforma koja omogućava interakciju između korisnika putem deljenja tekstualnih objava i informacija na vlastitim profilima. Sistem podržava dve ključne uloge: korisnika i administratora. Korisnici se mogu registrovati, prijaviti na svoje naloge, upravljati svojim profilima, stvarati i deliti objave. Administrator ima proširene ovlašćenja, uključujući upravljanje korisnicima i sadržajem.
-FUNKCIONALNOSTI:
-Registracija i prijava: Korisnici se mogu registrovati sa svojim podacima i prijaviti na svoje naloge koristeći svoje kredencijale.
-Korisnički Profili: Svaki korisnik ima svoj profil gde može prikazati lične informacije kao što su ime, slika profila i drugi detalji.
-Objavljivanje Tekstualnih Objava: Korisnici mogu stvarati i deliti svoje tekstualne objave sa zajednicom.
-Administratorske Ovlašćenja: Administrator ima mogućnost da upravlja korisničkim nalozima i sadržajem, uključujući mogućnost kreiranja i brisanja korisnika i njihovih objava.
-Bezbednost: Aplikacija obezbeđuje sigurnost i privatnost korisničkih podataka, kao i adekvatne autorizacije i autentifikacije za obe uloge.
-TEHNOLOGIJE:
-Frontend: Angular je korišćen za izradu interaktivnog korisničkog interfejsa, omogućavajući korisnicima da pregledaju profile, objave i koriste funkcionalnosti aplikacije.
-Backend: Spring Boot je izabran za izgradnju backend dela aplikacije. On omogućava definisanje RESTful API-ja za komunikaciju između frontenda i baze podataka.
-Baza Podataka: PostgreSQL se koristi za skladištenje korisničkih podataka, objava i drugih relevantnih informacija.
-Bezbednost: Tehnologije kao što su JSON Web Token (JWT) i Spring Security obezbeđuju sigurnu autentifikaciju i autorizaciju korisnika.
-Održavanje: Aplikacija se održava koristeći različite alate za testiranje, praćenje grešaka i ažuriranje.
+FUNCTIONALITIES:
+Registration and Login: Users can register with their information and log into their accounts using their credentials.
+User Profiles: Each user has their own profile where they can display personal information such as name, profile picture, and other details.
+Posting Textual Content: Users can create and share their text posts with the community.
+Administrative Privileges: The administrator has the ability to manage user accounts and content, including the ability to create and delete users and their posts.
+Security: The application ensures the security and privacy of user data, as well as appropriate authorization and authentication for both roles.
+TECHNOLOGIES:
+Frontend: Angular is used to create an interactive user interface, allowing users to view profiles, posts, and utilize the application’s functionalities.
+Backend: Spring Boot is chosen for building the backend part of the application. It enables the definition of RESTful APIs for communication between the frontend and the database.
+Database: PostgreSQL is used to store user data, posts, and other relevant information.
+Security: Technologies such as JSON Web Token (JWT) and Spring Security ensure secure user authentication and authorization.
+Maintenance: The application is maintained using various tools for testing, bug tracking, and updating.
 PREGLED PROJEKTA:
-1.	Početna strana:
+1.	Home Page:
    
-![image](https://github.com/user-attachments/assets/e757b805-e3c9-4fb0-a542-7d52a1ac34c0)
+![1](https://github.com/user-attachments/assets/b064cb0c-fa31-46f5-b9db-6fb5ad0d37bb)
 
-3.	Registracija korisnika:
 
-![image](https://github.com/user-attachments/assets/4c3bf71c-77fe-4b19-aa86-aae01145ff7a)
+2.	User Registration:
 
-4.	Login korisnika:  
 
-![image](https://github.com/user-attachments/assets/87a09a99-3858-43d0-a943-fac10647226e)
 
-5.	Admin ulogovan:
+3. User Login:  
 
-![image](https://github.com/user-attachments/assets/45522235-be51-490a-b440-c68bbe75a06f)
 
-6.	Korisnik ulogovan:
+4.	Admin Logged In:
 
-![image](https://github.com/user-attachments/assets/7a324f64-079e-4518-8877-d7aab8799f58)
 
-7.	Kreiranje posta:
 
-![image](https://github.com/user-attachments/assets/d8356bd2-b325-455d-b575-95fbf4340a22)
-8.	Pregled korisničkih postova:
+5.	User Logged In:
 
-![image](https://github.com/user-attachments/assets/a04ccd18-9308-4680-8cb5-7b8a1eeb126a)
-9.	Update korisnika kao admin i korisnik:
 
-![image](https://github.com/user-attachments/assets/9b1bc594-09c0-4c9c-93df-6effbe202aeb)
-10.	Update i delete korisnika kao admin:
 
-![image](https://github.com/user-attachments/assets/7f356307-e591-4a68-84d1-997763e26362)
-![image](https://github.com/user-attachments/assets/484ffc4c-5ff7-41b4-a0ae-0eea73d0717c)
+6.	Creating a Post:
 
-11.	Delete posta kao admin:
 
-![image](https://github.com/user-attachments/assets/9eadf768-19b6-44c2-9d2d-0f9d8d718103)
-Organizacija Projekta i Kreiranje Fajlova u Angularu koristeći Visual Studio Code (VSC)
 
-![image](https://github.com/user-attachments/assets/6dfcabc5-9ca4-4ad8-86fc-e4c45a6bc81e)
+7.	Viewing User Posts:
 
-![image](https://github.com/user-attachments/assets/a80688a0-015d-4afe-91bf-8b9736554cd2)
 
-![image](https://github.com/user-attachments/assets/3755601d-a886-4c0f-a6a0-b29af3101616)
 
-![image](https://github.com/user-attachments/assets/59fd1c29-14d2-4b5c-b4bf-3ad2cfa53f50)
+8.	Updating User as Admin and User:
 
-![image](https://github.com/user-attachments/assets/7b04ecd0-7bb8-45c9-9f5d-9d109b09e040)
 
-Organizacija Projekta i Kreiranje Paketa u Spring Bootu koristeći IntelliJ IDEA:
 
-![image](https://github.com/user-attachments/assets/3159b4c2-d4d2-4ca7-bd9f-5e2289aced38)
+9.	Updating and Deleting User as Admin:
 
-Organizacija Baze Podataka i Kreiranje Šema u PostgreSQL-u koristeći pgAdmin 4
 
-![image](https://github.com/user-attachments/assets/b490592a-cbbf-42d9-956b-00355ecc12be)
 
-ZAKLJUČAK 
-Ovaj projekat karakteriše izvršavanje svih procesa na jednoj lokalnoj mašini. Svi serveri se pokreću na lokalnom hostu, omogućavajući pristup aplikaciji putem istog uređaja. Ova aplikacija osmišljena je kako bi pružila dublji uvid u karakteristike i razlike između funkcionalnosti dve različite uloge korisnika: samih korisnika i administratora.
-Analizom funkcionalnosti omogućenih za ove dve uloge, korisnici mogu pristupiti različitim delovima aplikacije u skladu sa svojim ovlašćenjima. Dok korisnici mogu pregledati i uređivati svoje profile, deliti objave i interagovati sa sadržajem, administratori imaju proširene mogućnosti. Administratori ne samo da mogu obavljati sve aktivnosti koje korisnici mogu, već imaju i ovlašćenja da upravljaju korisnicima i sadržajem, uključujući kreiranje i brisanje korisničkih naloga i objava.
-Kroz korišćene tehnologije u ovom projektu, dobijamo uvid u osnove funkcionisanja složenijih aplikacija i sistema. Iako se ovaj projekat odvija na manjem obimu, principi koji stoje iza implementacije korisničkih uloga, komunikacije između komponenti i bezbednosti podataka prenose se i na znatno više kompleksne aplikacije i sisteme. Ovaj projekat stoga pruža osnovu za razumevanje načina funkcionisanja i arhitekture složenijih tehnoloških rešenja na znatno širem nivou.
+10.	Deleting a Post as Admin:
+
+
+
+CONCLUSION: This project is characterized by executing all processes on a single local machine. All servers run on localhost, allowing access to the application from the same device. This application is designed to provide deeper insight into the characteristics and differences between the functionalities of two distinct user roles: regular users and administrators.
+By analyzing the functionalities available to these two roles, users can access different parts of the application according to their permissions. While users can view and edit their profiles, share posts, and interact with content, administrators have extended capabilities. Administrators can perform all activities available to regular users, but they also have the authority to manage users and content, including creating and deleting user accounts and posts.
+Through the technologies used in this project, we gain insight into the fundamentals of operating more complex applications and systems. Although this project operates on a smaller scale, the principles behind implementing user roles, component communication, and data security apply to much more complex applications and systems. Therefore, this project provides a foundation for understanding how more complex technological solutions function and are architected on a much broader level.
+
+
+
+
+
+
