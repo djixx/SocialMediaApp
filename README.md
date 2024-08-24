@@ -1,17 +1,21 @@
 # SocialMediaApp
+
 FUNCTIONALITIES:
+
 Registration and Login: Users can register with their information and log into their accounts using their credentials.
 User Profiles: Each user has their own profile where they can display personal information such as name, profile picture, and other details.
 Posting Textual Content: Users can create and share their text posts with the community.
 Administrative Privileges: The administrator has the ability to manage user accounts and content, including the ability to create and delete users and their posts.
 Security: The application ensures the security and privacy of user data, as well as appropriate authorization and authentication for both roles.
+
 TECHNOLOGIES:
+
 Frontend: Angular is used to create an interactive user interface, allowing users to view profiles, posts, and utilize the application’s functionalities.
 Backend: Spring Boot is chosen for building the backend part of the application. It enables the definition of RESTful APIs for communication between the frontend and the database.
 Database: PostgreSQL is used to store user data, posts, and other relevant information.
 Security: Technologies such as JSON Web Token (JWT) and Spring Security ensure secure user authentication and authorization.
 Maintenance: The application is maintained using various tools for testing, bug tracking, and updating.
-PREGLED PROJEKTA:
+
 1.	Home Page:
    
 ![1](https://github.com/user-attachments/assets/b064cb0c-fa31-46f5-b9db-6fb5ad0d37bb)
